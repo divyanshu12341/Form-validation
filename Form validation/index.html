@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>REGISTRATION</h2>
+        </header>
+        <form id="form" class="form">
+
+            <!-- USERNAME -->
+
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter your full Name">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>error msg</small>
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" id="email" autocomplete="off" placeholder="Enter your Email">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>error msg</small>
+            </div>
+
+
+            <!-- PHONE NUMBER -->
+
+            <div class="form-control">
+                <label>Phone no</label>
+                <input type="number" id="phone" placeholder="Enter Phone no" autocomplete = "off" >
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>error msg</small>
+            </div>
+
+            <!-- PASSWORD -->
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" id="password" autocomplete = "off" placeholder="Enter your password">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>error msg</small>
+            </div>
+
+            <!-- CONFIRM PASSWORD -->
+            
+            <div class="form-control">
+                <label>Confirm password</label>
+                <input type="password" id="cpassword" placeholder="Enter your Password again">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>error msg</small>
+            </div>
+            
+            <!-- SUBMIT -->
+            <input type="submit" value="submit" class="btn">
+
+        </form>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/index.js" type="text/javascript"></script>
+</body>
+</html>
